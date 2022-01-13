@@ -1,14 +1,14 @@
 let wordsArray = [];
 let translatedWordsArray = [];
 
-function addWords() {
+function addWord() {
 	wordsArray.push(document.getElementById('word').value);
 	translatedWordsArray.push(document.getElementById('translation').value);
 	document.getElementById('word').value = "";
 	document.getElementById('translation').value = "";
 }
 
-function searchWords() {
+function searchWord() {
 	var searchBy = document.getElementById('searchWord').value;
 	var posWord = wordsArray.indexOf(searchBy);
 	var translation = translatedWordsArray[posWord];
